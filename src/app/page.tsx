@@ -5,7 +5,7 @@ export default function Home() {
     <>
     <div>
       <h1>Hello from next js
-        <Button variant="outline">Button</Button>
+        <Button variant="outline" className="ml-4">Button</Button>
 
       </h1>
     </div>
