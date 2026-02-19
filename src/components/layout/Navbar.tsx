@@ -58,10 +58,10 @@ interface Navbar1Props {
 
 const Navbar = ({
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
+    url: "http://localhost:3000",
+    src: "https://i.ibb.co.com/krRPd2S/png-transparent-blogger-computer-icons-icon-blogger-logo-free-miscellaneous-angle-text.png",
     alt: "logo",
-    title: "Shadcnblocks.com",
+    title: "BlogSphere",
   },
   menu = [
     {
@@ -69,7 +69,7 @@ const Navbar = ({
       url: "/"
     },
     {
-      title: "Blogs",
+      title: "Blogs", 
       url: "/blogs",
     },
     {
