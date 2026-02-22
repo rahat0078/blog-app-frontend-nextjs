@@ -1,7 +1,25 @@
+"use client"
 
-export default async function AboutPage() {
+import { getBlogs } from "@/actions/blog.action";
+import { useEffect, useState } from "react"
 
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+export default function AboutPage() {
+
+    const [data, setData] = useState();
+    const [error, setError] = useState<{ message: string } | null>(null)
+
+    console.log(data);
+    console.log(error);
+
+    useEffect(() => {
+        (async () => {
+            const { data, error } = await getBlogs();
+
+            setData(data.data.data);
+            setError(error)
+        })();
+    }, [])
+
 
     return (
         <div>AboutPage</div>

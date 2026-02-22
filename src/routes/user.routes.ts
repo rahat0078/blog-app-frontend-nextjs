@@ -3,15 +3,15 @@ import { Route } from './../types/routes.type';
 
 export const userRoutes: Route[] = [
     {
-        title: "User Management",
+        title: "Blog Management",
         items: [
             {
-                title: "Add Blog",
-                url: "/add-blog",
+                title: "Create Blog",
+                url: "/dashboard/create-blog",
             },
             {
                 title: "Make Payment",
-                url: "/payment",
+                url: "/dashboard/payment",
             },
         ],
     },
